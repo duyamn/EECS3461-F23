@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.5/dist/katex.min.css" integrity="sha384-L+Gq2Cso/Y2x8fX4wausgiZT8z0QPZz7OqPuz4YqAycQJyrJT9NRLpjFBD6zlOia" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" crossorigin="anonymous">
+<meta charset="utf-8">
+<title></title>
+<style>
+body {
+  font-family: Calibri;
+}
+code {
+  font-family: "Source Code Pro", monospace;
+}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+html{
+  line-height:1.15;
+  -webkit-text-size-adjust:100%;
+}
+
+body{
+  margin:0;
+}
+
+main{
+  display:block;
+}
+
+h1{
+  font-size:2em;
+  margin:0.67em 0;
+}
+
+hr{
+  box-sizing:content-box;
+  height:0;
+  overflow:visible;
+}
+
+pre{
+  font-family:monospace, monospace;
+  font-size:1em;
+}
+
+a{
+  background-color:transparent;
+}
+
+abbr[title]{
+  border-bottom:none;
+  text-decoration:underline;
+  text-decoration:underline dotted;
+}
+
+b,
+strong{
+  font-weight:bolder;
+}
+
+code,
+kbd,
+samp{
+  font-family:monospace, monospace;
+  font-size:1em;
+}
+
+small{
+  font-size:80%;
+}
+
+sub,
+sup{
+  font-size:75%;
+  line-height:0;
+  position:relative;
+  vertical-align:baseline;
+}
+
+sub{
+  bottom:-0.25em;
+}
+
+sup{
+  top:-0.5em;
+}
+
+img{
+  border-style:none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea{
+  font-family:inherit;
+  font-size:100%;
+  line-height:1.15;
+  margin:0;
+}
+
+button,
+input{
+  overflow:visible;
+}
+
+button,
+select{
+  text-transform:none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"]{
+  -webkit-appearance:button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner{
+  border-style:none;
+  padding:0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring{
+  outline:1px dotted ButtonText;
+}
+
+fieldset{
+  padding:0.35em 0.75em 0.625em;
+}
+
+legend{
+  box-sizing:border-box;
+  color:inherit;
+  display:table;
+  max-width:100%;
+  padding:0;
+  white-space:normal;
+}
+
+progress{
+  vertical-align:baseline;
+}
+
+textarea{
+  overflow:auto;
+}
+
+[type="checkbox"],
+[type="radio"]{
+  box-sizing:border-box;
+  padding:0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button{
+  height:auto;
+}
+
+[type="search"]{
+  -webkit-appearance:textfield;
+  outline-offset:-2px;
+}
+
+[type="search"]::-webkit-search-decoration{
+  -webkit-appearance:none;
+}
+
+::-webkit-file-upload-button{
+  -webkit-appearance:button;
+  font:inherit;
+}
+
+details{
+  display:block;
+}
+
+summary{
+  display:list-item;
+}
+
+template{
+  display:none;
+}
+
+[hidden]{
+  display:none;
+}
+fieldset{border:0;padding:0}button{all:unset;cursor:pointer}.mermaid .actor,.mermaid .labelBox{stroke:#666 !important}.markdown-body .songbook .charter-header{position:relative;min-height:65px;margin-bottom:1em}.markdown-body .songbook .charter-title{font-size:1.5em;font-weight:bold;margin:0;padding:0}.markdown-body .songbook .charter-logo{text-align:right;height:70px}.markdown-body .songbook .charter-artist,.markdown-body .songbook .charter-subtitle,.markdown-body .songbook .charter-key{font-weight:normal;margin:0 0 3px 0;padding:0}.markdown-body .songbook .charter-artist{font-size:.8em;font-size:.9em}.markdown-body .songbook .charter-subtitle{font-size:.8em;font-size:.9em}.markdown-body .songbook .charter-key{font-weight:bold;font-size:.9em;font-size:1em}.markdown-body .songbook .charter-header-logo{position:absolute;top:0;right:0;float:right}.markdown-body .songbook .charter-header::after{content:"";clear:both;display:table}.markdown-body .songbook .charter-logo-tagline{font-size:.7em}.markdown-body .songbook .charter-section{margin-bottom:2em;page-break-inside:avoid;margin-bottom:1em}.markdown-body .songbook .charter-section-title{font-weight:bold;text-transform:uppercase;font-size:1.1em;color:#888}.markdown-body .songbook .charter-section-body{margin-left:20px}.markdown-body .songbook .charter-comment{font-style:italic}.markdown-body .songbook td.charter-chord:not(:empty){font-weight:bold;vertical-align:bottom;padding-right:14px;padding-right:8px}.markdown-body .songbook td.charter-lyric{white-space:nowrap;padding-right:2px}.markdown-body .songbook th,.markdown-body .songbook td{line-height:unset;padding:0}.markdown-body .songbook .charter-lyric{padding-bottom:6px}.markdown-body .songbook td{border-top:0}.markdown-body .songbook .charter-body{margin-top:15px}.markdown-body .songbook .charter-chart{margin-bottom:4px}.markdown-body{box-sizing:border-box;margin:0 auto;max-width:700px;padding:30px;color:#444;line-height:1.4;position:relative;word-wrap:break-word;color:#ddd}.hljs-comment,.hljs-quote{color:#969896}.hljs-variable,.hljs-template-variable,.hljs-tag,.hljs-name,.hljs-selector-id,.hljs-selector-class,.hljs-regexp,.hljs-deletion{color:#c66}.hljs-number,.hljs-built_in,.hljs-builtin-name,.hljs-literal,.hljs-type,.hljs-params,.hljs-meta,.hljs-link{color:#de935f}.hljs-attribute{color:#f0c674}.hljs-string,.hljs-symbol,.hljs-bullet,.hljs-addition{color:#b5bd68}.hljs-title,.hljs-section{color:#81a2be}.hljs-keyword,.hljs-selector-tag{color:#b294bb}.hljs{display:block;overflow-x:auto;background:#1d1f21;color:#c5c8c6;padding:.5em}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:bold}.preview-error{box-shadow:0 0 10px 2px rgba(0,0,0,.3);display:none;font-family:monospace;left:0;margin:0;position:absolute;top:0}.preview-error-wrap{position:relative}.preview-error-wrap .icon-stack{left:-1.25em;position:absolute;top:-15px;z-index:10}.preview-error-wrap .icon-invert{color:#fff}.preview-error-wrap:hover .preview-error{display:block}.markdown-body h1{font-size:2.7em}.markdown-body h2{font-size:2.3em}.markdown-body h3{font-size:2em}.markdown-body h4{font-size:1.8em}.markdown-body h5{font-size:1.5em}.markdown-body h6{font-size:1.2em}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{color:#111;font-weight:900;color:#bbb}.markdown-body hr{border:0;border-bottom:1px dashed #aaa;border-bottom-color:#666}.markdown-body img{max-width:100%}.markdown-body a{color:#4fa1cc;text-decoration:none;color:#10feff}.markdown-body a:hover{color:#226ca1;text-decoration:underline;color:#8effff}.markdown-body abbr[title]{cursor:help;text-decoration:underline dotted}.markdown-body pre{background-color:#fafafa;border:1px solid #bbb;border-radius:3px;padding:6px 10px;white-space:pre-wrap;word-break:break-word;background-color:#282828;border-color:#444}.markdown-body code{background-color:#eaeaea;color:#cd2e47;font-size:.75em;padding:1px 2px;background-color:#444;border-radius:2px;color:#ff657d}.markdown-body pre code{background-color:inherit;color:inherit;padding:0;background-color:initial}.markdown-body dt{font-weight:bold;margin-top:1em}.markdown-body table{border-collapse:collapse;margin-bottom:20px}.markdown-body th{text-align:left}.markdown-body th,.markdown-body td{line-height:24px;padding:8px}.markdown-body td{border-top:1px solid #ccc;border-top-color:#666}.markdown-body .task-list-item label{cursor:pointer}.markdown-body .task-list-item-checkbox{margin-right:5px}.markdown-body input[type=checkbox]{appearance:none;background-color:#fff;border:1px solid #888;border-radius:3px;cursor:pointer;height:13px;position:relative;width:13px;background-color:#111;border-color:#666}.markdown-body input[type=checkbox]:active{border-color:#333;border-color:#888}.markdown-body input[type=checkbox]:focus{outline:none}.markdown-body input[type=checkbox]:focus-visible{outline:2px solid tomato;outline-color:#f1f1bb}.markdown-body input[type=checkbox]:checked{background-color:#66f;border-color:#5151c8;background-color:#7878ea;border-color:#b2b2ff}.markdown-body input[type=checkbox]:checked:active{background-color:#8a8aff;background-color:#b2b2ff}.markdown-body input[type=checkbox]:checked::after{border-color:#fff;border-style:solid;border-width:0 0 2px 2px;bottom:5px;box-shadow:-1.5px 1.5px 1px 0 rgba(0,0,0,.4);content:"";display:block;height:3px;position:absolute;right:1px;transform:rotate(-45deg);width:7px}.markdown-body ul ::marker{font-size:1.4em}.markdown-body .text-align-center{text-align:center}.markdown-body mark{background:linear-gradient(-100deg, rgba(240, 255, 0, 0.4), rgba(240, 255, 50, 0.6) 95%, rgba(240, 255, 50, 0.1));border-radius:1em .1em;margin:0 -0.1rem;padding:.4rem .1rem;background:#cccc1a;border-radius:.2em}.markdown-body .tab circle{paint-order:stroke;stroke:#fff !important;stroke-width:2;stroke:#222 !important;stroke-width:4 !important}.rtl pre,.rtl .songbook,.rtl .abc svg,.rtl .tab svg,.rtl .mermaid svg{direction:ltr}.visually-hidden:not(:focus):not(:active){clip:rect(0 0 0 0);clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px}.markdown-body .abc path,.markdown-body .abc text{fill:#ccc !important}.markdown-body .abc .abcjs-staff{fill:#999 !important}.markdown-body .abc .abcjs-ending{stroke:#ccc !important}.markdown-body .tab circle,.markdown-body .tab text,.markdown-body .tab text tspan{fill:#ccc !important}.markdown-body .tab path{fill:#ccc !important;stroke:#ccc !important}.markdown-body .tab .staff,.markdown-body .tab .string{stroke:#888 !important}.markdown-body .tab .fret-position,.markdown-body .tab .string-marker{stroke:#ccc !important}.markdown-body .tab .contrast-text{stroke:#222 !important}.markdown-body .tab .fingering-text tspan{fill:#000 !important}.mermaid .er.attributeBoxOdd{fill:#000 !important}.mermaid .er.attributeBoxEven{fill:none !important}.mermaid .cluster rect{fill:#333 !important}.mermaid .section.section0{fill:#888 !important}.mermaid .section.section2{fill:#080808 !important}body{background-color:#222;color:#eee}
+</style>
+</head>
+<body>
+<div class="markdown-body">
+<h1 id="top">top</h1>
+<p>toc:</p>
+<ul>
+<li><a href="#top">top</a></li>
+<li><a href="#listed-topics">Listed Topics</a>
+<ul>
+<li><a href="#design-principles">Design Principles</a></li>
+<li><a href="#usability-componentsaspects">Usability Components/aspects</a></li>
+<li><a href="#human-centred-design-methodology">Human-Centred Design Methodology</a></li>
+<li><a href="#double-diamond-of-design">Double Diamond of Design</a></li>
+<li><a href="#data-collection-methods">Data Collection Methods</a></li>
+<li><a href="#personas">Personas</a></li>
+<li><a href="#prototyping">Prototyping</a></li>
+<li><a href="#evaluation">Evaluation</a>
+<ul>
+<li><a href="#usability-testing">Usability Testing</a></li>
+<li><a href="#sus">SUS</a></li>
+<li><a href="#inspection">Inspection</a>
+<ul>
+<li><a href="#heuristic-evaluations">Heuristic Evaluations</a></li>
+<li><a href="#walkthroughs">Walkthroughs</a></li>
+<li><a href="#web-analytics-and-ab-testing">Web Analytics and A/B Testing</a></li>
+<li><a href="#predictive-models">Predictive Models</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#principles-of-visual-design">Principles of Visual Design</a>
+<ul>
+<li><a href="#interface-metaphors">Interface Metaphors</a></li>
+<li><a href="#graphical-devices-for-grouping">Graphical Devices for Grouping</a></li>
+</ul>
+</li>
+<li><a href="#interaction-design-framework">Interaction Design Framework</a>
+<ul>
+<li><a href="#models">Models</a></li>
+<li><a href="#framworks">Framworks</a></li>
+</ul>
+</li>
+<li><a href="#aspects-of-interaction">Aspects of Interaction</a></li>
+</ul>
+</li>
+<li><a href="#rest-of-course">Rest of Course</a>
+<ul>
+<li><a href="#affordances">Affordances</a></li>
+<li><a href="#accessibility">Accessibility</a></li>
+<li><a href="#interaction-types">Interaction Types</a></li>
+<li><a href="#data-privacy">Data Privacy</a></li>
+<li><a href="#society">Society</a>
+<ul>
+<li><a href="#social-proof">Social Proof</a></li>
+<li><a href="#biases">Biases</a></li>
+</ul>
+</li>
+<li><a href="#emotional-design">Emotional Design</a></li>
+<li><a href="#random-small-shit">random small shit</a>
+<ul>
+<li><a href="#front-end-dev-vs-ux-designer">Front-End Dev vs UX Designer</a></li>
+<li><a href="#recognition-vs-recall">Recognition vs Recall</a></li>
+<li><a href="#conceptual-design-vs-physicalconcrete-design">conceptual design vs physical/concrete design</a></li>
+<li><a href="#hierarchy-of-user-needs">hierarchy of user needs</a></li>
+<li><a href="#types-of-interfaces">types of interfaces</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="listed-topics">Listed Topics</h1>
+<p>Prof gave the following topics as being the most important topics discussed in the course:</p>
+<ol>
+<li>Design Principles</li>
+<li>Usability components/aspects</li>
+<li>human-centred design methodology</li>
+<li>double diamond of design process model</li>
+<li>data collection methods (contextual inquiry,…)</li>
+<li>personas</li>
+<li>prototyping</li>
+<li>evaluation (methods, tools, techniques,…)</li>
+<li>principles of visual design</li>
+<li>interaction design framework (conceptual models of user and designer, system image)</li>
+<li>cognitive, social, and emotional aspects of interaction</li>
+</ol>
+<p><a href="#top">return to top</a></p>
+<h2 id="design-principles">Design Principles</h2>
+<p>Dos and Don’ts</p>
+<ul>
+<li>visibility</li>
+<li>feedback</li>
+<li>constraints</li>
+<li>consistency</li>
+<li>affordance</li>
+</ul>
+<p>Visibility:</p>
+<ul>
+<li>show the user what they want to see</li>
+<li>key functions visible</li>
+<li>non-applicable functions invisible</li>
+</ul>
+<p>Feedback:</p>
+<ul>
+<li>know whether interaction with system was successful</li>
+<li>what action has been done and what this has accomplished</li>
+<li>immmediate and synched to action</li>
+<li>ex
+<ul>
+<li>vibration</li>
+<li>audio cue</li>
+<li>loading screen</li>
+<li>read receipt in messaging apps</li>
+</ul>
+</li>
+</ul>
+<p>Consistency:</p>
+<ul>
+<li>have similar operations and similar elements for achieving similar tasks</li>
+<li>support learning</li>
+<li>good for multiplatform applications</li>
+</ul>
+<p>Constraint:</p>
+<ul>
+<li>limit what’s possible for the user</li>
+<li>simplify things to guide them to the next appropriate action</li>
+<li>reduces chances of errors from user sellecting wrong options</li>
+</ul>
+<p>Affordance:</p>
+<ul>
+<li>make it easy for people to know how to use your thing</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h2 id="usability-components%2Faspects">Usability Components/aspects</h2>
+<p>There are different goals to be achieved for something to be usable:</p>
+<ul>
+<li>effictiveness</li>
+<li>efficiency</li>
+<li>safety</li>
+<li>utility</li>
+<li>learnability</li>
+<li>memorability</li>
+</ul>
+<p>Something needs to effectively do what it sets out to help with or accomplish in order to be usable.
+Can we get the outcome we want.</p>
+<p>It needs to be efficient with time and resoures consumed.</p>
+<p>If the system is unreasonably unsafe then the cost of use is too great compared to using a different safer system.</p>
+<p>Can we get to the outcome we want in the way we want.
+Does this have all the functions we want it to have.</p>
+<p>How easily can a user figure out how to use the system.
+Can a user use their own strategies or are they meant to follow a specific way of learning.
+Is there documentation or other learning resources in the form of tutorials or videos.
+Is the user just meant to explore until they understand what is happening.
+In general, the more complex the system the harder it is to learn.</p>
+<p>Can users remember how to use the system once they’ve already learned how.
+Are all the items in their right places consistently.
+Are there good visual cues and ways to navigate the system.
+Make names descriptive.</p>
+<hr>
+<p>Useful, useable, and used.</p>
+<p>Some stupid shitty distinction that we made in class.</p>
+<p>Something is useful if it can serve a use.</p>
+<p>Something is useable if it can be used.</p>
+<p>But something can be useful and useable but not be used.</p>
+<p>A good design is one that is used.</p>
+<p><a href="#top">return to top</a></p>
+<h2 id="human-centred-design-methodology">Human-Centred Design Methodology</h2>
+<p>Focus on people, on users and their experience.</p>
+<p>User Experience:</p>
+<ul>
+<li>all aspects of the end user’s experience and what affects them</li>
+<li>is the interface functional</li>
+<li>how does the user interface with it</li>
+<li>how does the user feel
+<ul>
+<li>satisfaction</li>
+<li>frustration</li>
+</ul>
+</li>
+<li>appearances
+<ul>
+<li>vibes
+<ul>
+<li>professional</li>
+<li>safe</li>
+</ul>
+</li>
+<li>clean vs cluttered</li>
+</ul>
+</li>
+</ul>
+<p>This is a general approach rather than a process.</p>
+<p>Mainly about the double diamond of design.</p>
+<p><a href="#top">return to top</a></p>
+<h2 id="double-diamond-of-design">Double Diamond of Design</h2>
+<p>Double diamond refers to the shape of the scope of our project.</p>
+<p>We start at one point,
+expand out,
+narrow down to another point,
+expand out,
+then narrow down to one last point.</p>
+<ol>
+<li>discover</li>
+<li>define</li>
+<li>develop</li>
+<li>deliver</li>
+</ol>
+<p>we discover what the problem is</p>
+<p>define what areas we need to focus on</p>
+<p>develop potential solutions</p>
+<p>deliver the best one we can.</p>
+<p>This process let’s us iterate as well since we can go between 1&amp;2, 3&amp;4, or even between both diamonds of 1&amp;2 and 3&amp;4.</p>
+<ul>
+<li>start with the problem</li>
+<li>discover - find insight into the problem</li>
+<li>define - find an area to focus on</li>
+<li>converge onto a point</li>
+<li>develop - expand out and find solutions</li>
+<li>deliver - narrow down to solutions that work</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h2 id="data-collection-methods">Data Collection Methods</h2>
+<p>need to collect data to understand users</p>
+<ul>
+<li>where:
+<ul>
+<li>users
+<ul>
+<li>know what they’re expecting or what they’re gonna do</li>
+<li>gain access to the user’s mental model instead of just our own mental model</li>
+</ul>
+</li>
+<li>other products</li>
+<li>field research</li>
+<li>documentation, manuals, logs, … to know more about the steps involved in an activity…</li>
+</ul>
+</li>
+<li>should be iterative
+<ul>
+<li>do this more than once</li>
+<li>do this regularly</li>
+<li>continue to do this after release</li>
+</ul>
+</li>
+<li>use different techniques
+<ul>
+<li>surveys, questionnaires</li>
+<li>telemetry</li>
+<li>observe users in action</li>
+<li>focus groups</li>
+<li>probes
+<ul>
+<li>designed to prompt and elicit information from peopel about their lives and local culture</li>
+<li>diary maintained by a user over several day sor weeks
+<ul>
+<li>diary study</li>
+<li>media diary</li>
+<li>photo</li>
+<li>scrapbooks</li>
+<li>google docs</li>
+</ul>
+</li>
+<li>similar to journaling in order to better understand yourself
+<ul>
+<li>ask for the users’ general experiences with how they use the program and other related things</li>
+</ul>
+</li>
+<li>tell the users how to do the probe in the probe briefing session
+<ul>
+<li>how to take screenshot</li>
+<li>how to describe shit</li>
+</ul>
+</li>
+<li>you can have a debriefing session
+<ul>
+<li>see how they feel about the probing process
+<ul>
+<li>improve for later</li>
+</ul>
+</li>
+<li>insights on the program
+<ul>
+<li>they’ve been using it for a while so they’ve become a skilled user (hopefully)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>contextual inquiry
+<ul>
+<li>used often in other fields</li>
+<li>interviewer records what user does and why user does what they do…</li>
+<li>one-on-one interview - contextual interview
+<ul>
+<li>at place of work, no lab environment</li>
+<li>just blending in and observing in the background</li>
+</ul>
+</li>
+<li>the focus is on the matters of daily life</li>
+<li>uses a model of master (user) / apprentice (interviewer)</li>
+<li>the interviewer is immersed in the world of the user</li>
+<li>principles (4) :
+<ol>
+<li>context principle
+<ul>
+<li>going to the user wherever they are</li>
+<li>see what they do as they do it</li>
+</ul>
+</li>
+<li>partership
+<ul>
+<li>user and interviewer explore the user’s life together, on an equal footing</li>
+<li>no one has the upper hand</li>
+</ul>
+</li>
+<li>interpretation
+<ul>
+<li>make sure the interpretations from the observations are sound</li>
+<li>make sure the information is correct</li>
+<li>run through the notes with the user</li>
+</ul>
+</li>
+<li>focus
+<ul>
+<li>make sure to just grab what you need and not unnecessary shit</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>think aloud protocol - use in conjunction with the above
+<ul>
+<li>users talk as they “do”
+<ul>
+<li>have users think out loud</li>
+</ul>
+</li>
+<li>they think loudly so that the interviewer would be able to record their trail of thoughts</li>
+<li>“please think aloud. verbalize your thought process. What are you looking for? What are you doing? What are you trying to do? What’s the goal? What are you cooking?”</li>
+<li>not very natural for most people so need to prompt</li>
+<li>this is just gameplay commentary and vod review
+<ul>
+<li>stabby videos</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>brainstorming
+<ul>
+<li>a generic technique used to generate, refine, and develop ideas</li>
+<li>participants are the users
+<ul>
+<li>invite the users to something like a focus group</li>
+<li>have them discuss issues and features</li>
+</ul>
+</li>
+<li>key factors:
+<ul>
+<li>know the user by the end</li>
+<li>no ideas are criticized or discarded
+<ul>
+<li>may be useful later on</li>
+</ul>
+</li>
+<li>wide range of participants
+<ul>
+<li>levels of experience</li>
+<li>levels of expertise</li>
+<li>stupid motherfuckers</li>
+<li>smart motherfuckers</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Remember to try to stay within the scope of what we’re looking for.</p>
+<p><a href="#top">return to top</a></p>
+<h2 id="personas">Personas</h2>
+<p>We pieces of data that we can correlate to one another.</p>
+<p>With that we can create a user profile.</p>
+<p>ex:</p>
+<ul>
+<li>bus commuter
+<ul>
+<li>reports ~1 hr commute times</li>
+<li>reports unreliable transport time</li>
+</ul>
+</li>
+<li>car commuter
+<ul>
+<li>reports ~30 min commute times</li>
+<li>reports reliable transport time</li>
+</ul>
+</li>
+</ul>
+<p>Then we bring it to life by creating a character based off of it that we call a persona.</p>
+<p>This way we have some fictional person that can represent a ton of our users.</p>
+<p>making too many is a waste of time if your scope is too small or if it would divide the userbase too finely.</p>
+<p>We put these personas into scenarios to see what a prospective user would do/feel in a situation.</p>
+<p>There are also use cases where we show commonly performed actions.</p>
+<p><a href="#top">return to top</a></p>
+<h2 id="prototyping">Prototyping</h2>
+<p>prototyping</p>
+<ul>
+<li>users don’t have a clear idea what they want</li>
+<li>you can’t perfectly communicate what you are going to make</li>
+<li>prototypes are an easy way for us to communicate to users
+<ul>
+<li>give them something they can use and understand</li>
+</ul>
+</li>
+<li>txtbk:
+<ul>
+<li>one manifestation of a design that allows stakeholders to interact with it and to explore its suitability</li>
+</ul>
+</li>
+<li>let’s us experiment with what the final product or parts of the final product might look like</li>
+<li>typically only represents some specific aspect
+<ul>
+<li>shape</li>
+<li>look and feel</li>
+<li>1 function</li>
+<li>structure</li>
+</ul>
+</li>
+<li>low-fidelity - less details, less complicated
+<ul>
+<li>simple</li>
+<li>cheap</li>
+<li>fast</li>
+<li>use crude materials like pencil, paper, and cardboard</li>
+<li>easily dismissable</li>
+<li>not so robust</li>
+<li>not great for testing towards the end</li>
+<li>good for beginning of design process</li>
+</ul>
+</li>
+<li>high-fidelity - high detail, more complicated
+<ul>
+<li>complex</li>
+<li>expensive</li>
+<li>slow</li>
+<li>interactive</li>
+<li>similar to functional product</li>
+<li>very robust</li>
+<li>good for nearing the end of the design process</li>
+</ul>
+</li>
+<li>tested functionality need not be fully implemented
+<ul>
+<li>implementation may be faked</li>
+<li>wizard of oz
+<ul>
+<li>get someone else (the wizard) to do it</li>
+<li>humans are fallible and inconsistent
+<ul>
+<li>unlike the system we’re making</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>prototypes are different from minimal viable product as an mvp can be put to market as a finished product.</p>
+<p>Focus on a specific idea with prototypes.</p>
+<p>Storyboarding:</p>
+<ul>
+<li>evolved version of a user scenario</li>
+<li>depict the context in which the user experiences a problem or pain point
+<ul>
+<li>see how the system can help the user in that context</li>
+</ul>
+</li>
+</ul>
+<p>The slides have a lot of examples for prototypes.</p>
+<p>Remember to try and prototype the interaction.</p>
+<p>Moodboards:</p>
+<ul>
+<li>help with interactive design</li>
+<li>decide what will make sense to include for the visual feel or look and feel</li>
+</ul>
+<p>plus/minus scenarios</p>
+<ul>
+<li>attempt to caputre the most positive and most negative consequences of a particular proposed design solution</li>
+<li>reflections on imagined benefits, consequences, and ramifications</li>
+<li>example: at the bank we use a faster less precise algo to send information
+<ul>
+<li>on bigger transactions that we have the time to process then the lack of precision isn’t a factor and we don’t want to lose their information even for a second even though we can correct later</li>
+<li>on smaller transactions we just want speed and are able to correct later</li>
+</ul>
+</li>
+</ul>
+<p>The fidelity level we refer to when we talk about lo-fi and hi-fi prototypes is moreso refering to the visual, functional, and content fidelity rather than other aspects of the quality.</p>
+<p>There are no true clear line dividing the different types of prototypes.</p>
+<p>There are wireframes, mockups, interactive prototypes, simple html/css representations, and other types of prototypes that fall under the category of hi-fi prototypes but still run the gambit when it comes to different levels of fidelity.</p>
+<p>Wireframes are a visual mockup that outlines the basic structure of your website, app, or landing page.
+SHow of the structure and content controls.
+Basic shapes and elements are used to block out where each piece of content and UI element will go.</p>
+<p>It’s all about visuals and layout. We’re not necessarily concerned with the function or content.
+High visual fidelity.
+We’re still concerned with the type of details in terms of content and structure but less so with the real content itself.</p>
+<p>A wireframe mockup of a videosharing website will show where the main videoplayer goes, where the playlist goes, and where ads go.
+We may not decide the colours or fonts.</p>
+<p>Mockups are static pages that show off the visuals and content.
+What a screenshot of the final product would look like.
+Low functionality (multiple pages but they don’t link or anything) fidelity but high visual and content fidelity (as close as we can to final product at that point in time).</p>
+<p><a href="#top">return to top</a></p>
+<h2 id="evaluation">Evaluation</h2>
+<p>We evaluate our designs all the time throughout the process of designing.</p>
+<p>Formative evaluation:</p>
+<ul>
+<li>done during design phase</li>
+<li>often only checks one or a few parts of a system</li>
+<li>verify an idea works before throwing it in with the rest of the design</li>
+</ul>
+<p>summative:</p>
+<ul>
+<li>done after finished product is created</li>
+<li>tests the whole system</li>
+<li>make sure everything works together in the end</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h3 id="usability-testing">Usability Testing</h3>
+<p>A session where a researcher called the facilitator or moderator asks a participant to perform tasks, usually using one or more specific user interfaces. While the participant completes each task, the researcher observes the participant’s behavior and listens for feedback.</p>
+<p>Testing needs to be 1 on 1.</p>
+<p>We only need 5 participants</p>
+<p>Surveys are like interviews,
+one on one question sequences.</p>
+<p>Questions are premade and static whereas in an interview we can change it up a lot</p>
+<p><a href="#top">return to top</a></p>
+<h3 id="sus">SUS</h3>
+<p>System usability scale - provides a reliable tool for measuring usability quickly</p>
+<ul>
+<li>quick and dirty method</li>
+<li>10 item questionnaire with 5 response options from strongly agree to strongly disagree</li>
+<li>limitations:
+<ul>
+<li>many questions might have to ask the same thing in order to get useful/specific information</li>
+<li>questions are very vague</li>
+<li>questions are often framed in positives and negatives
+<ul>
+<li>these are effectively yes or no questions</li>
+</ul>
+</li>
+<li>prone to bias
+<ul>
+<li>people might want to just easily agree or disagree</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>we can get a good mean/average score at the end though and that can be pretty good to quantifiably say we did a good job</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h3 id="inspection">Inspection</h3>
+<p>Evaluation without direct access to users</p>
+<ul>
+<li>suppose we cannot access the users
+<ul>
+<li>they are difficult to find</li>
+<li>they are far away</li>
+<li>they are spread out</li>
+<li>we don’t have the resources
+<ul>
+<li>time</li>
+<li>money</li>
+</ul>
+</li>
+<li>the users are otherwise not available</li>
+</ul>
+</li>
+<li>but we still want to do some testing</li>
+<li>inspection is how we do studies/tests w/o users</li>
+<li>2 main subtypes
+<ul>
+<li>heurisitc evaluations</li>
+<li>walkthroughs</li>
+</ul>
+</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h4 id="heuristic-evaluations">Heuristic Evaluations</h4>
+<p>Heurisitc Evaluations:</p>
+<ul>
+<li>evauluate based on some heuristics based in the principles and rules of design</li>
+<li>heuristics
+<ul>
+<li>rules of thumbs</li>
+<li>very general</li>
+</ul>
+</li>
+<li>see if the design stands up to what we know about design</li>
+<li>not as effective as evaluation with real users</li>
+<li>prone to bias</li>
+<li>Jacok Bielsen’s 10 general principles for interaction design
+<ul>
+<li>visilibity of the system’s status
+<ul>
+<li>what is the current sttae of the system</li>
+<li>what is going on?</li>
+<li>can we tell that we’re done what we’re trying to do</li>
+<li>do we know what the next required step is?</li>
+</ul>
+</li>
+<li>match between system and the real world
+<ul>
+<li>use of perfect metaphors</li>
+<li>take advantage of users’ experience with real life things</li>
+<li>does the design do the above</li>
+</ul>
+</li>
+<li>user control and freedom
+<ul>
+<li>based in usability and allat</li>
+</ul>
+</li>
+<li>consistency and standards
+<ul>
+<li>using guidelines</li>
+<li>consistency with branding</li>
+</ul>
+</li>
+<li>error prevention
+<ul>
+<li>where could things go wrong and what can I do about it?</li>
+<li>Am I doing anything about it?</li>
+<li>have an undo/cancel</li>
+</ul>
+</li>
+<li>recognition rather than recall
+<ul>
+<li>providing the user with the means to recognize what they want to do as opposed to completely recall what they want to do</li>
+<li>don’t force them to memorize a process</li>
+<li>intuitive process</li>
+<li>they can recognize what they want to do as opposed to memorize what they want to do</li>
+<li>give them a search bar so that they don’t need to dig around in menus and subcategories
+<ul>
+<li>the suggestions would be really good</li>
+</ul>
+</li>
+<li>example used: IDE
+<ul>
+<li>we don’t remember the names of the functions, we type out most of it and then we can just autocomplete it</li>
+</ul>
+</li>
+<li>examples
+<ul>
+<li>autofill and suggestions</li>
+<li>filters and categories</li>
+<li>good icons and labels</li>
+<li>feedback and confirmation to prompt users’ memory</li>
+<li>defaults and presets so users don’t have to tweak settings a ton</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>flexibility and efficiency of use
+<ul>
+<li>connected to the usability aspects of efficiency and learnability</li>
+<li>are there different ways for different users of different levels of knowledge/expertise to use the system</li>
+<li>prompts and confirmations for newer users that can be disabled by experienced users</li>
+<li>flexible enough that the inexperienced can get things done and learn</li>
+<li>efficient enough that an experienced user can go very fast</li>
+</ul>
+</li>
+<li>aesthetics and minimalistic design
+<ul>
+<li>functionality comes first
+<ul>
+<li>safety security and reliability
+<ul>
+<li>then usability
+<ul>
+<li>then finally aesthetics</li>
+<li>as long as we don’t compromise any of the previous</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>it’s still important but we don’t talk about it rn</li>
+</ul>
+</li>
+<li>help users recognize, diagnose, and recover from errors</li>
+<li>help and documentation
+<ul>
+<li>clues aren’t enough all of the time</li>
+<li>more information is often required</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h4 id="walkthroughs">Walkthroughs</h4>
+<ul>
+<li>the designers and ux researchers walk through the action sequences of each task from a sample task list
+<ul>
+<li>will the user know what to do to achieve the task?</li>
+<li>will the user notice that an action is available?</li>
+<li>try to find what a normal user might run into and see as a problem</li>
+<li>act as the user working with the product</li>
+</ul>
+</li>
+<li>record and document results</li>
+<li>best to ask for other entites (designers, researches, firms, etc.)
+<ul>
+<li>tester needs to have the background knowledge of the prospective user</li>
+</ul>
+</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h4 id="web-analytics-and-a%2Fb-testing">Web Analytics and A/B Testing</h4>
+<p>Web analytics and A/B testing</p>
+<ul>
+<li>users’s loggings can be used to monitor user behavior</li>
+<li>user is not present</li>
+<li>ethical concerns
+<ul>
+<li>consent is not continued and cannot be easily withdrawn</li>
+</ul>
+</li>
+</ul>
+<p>web analytics:</p>
+<ul>
+<li>where users came from</li>
+<li>which pages they visited in what order</li>
+<li>other user stats</li>
+<li>not very reliable or specific but it’s information</li>
+</ul>
+<p>A/B testing:</p>
+<ul>
+<li>2 versions of the system (A and B) to 2 groups of users belonging to the same demographic (user profile or persona)</li>
+<li>users are not present (online)</li>
+<li>in large scales</li>
+<li>randomly selected users</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h4 id="predictive-models">Predictive Models</h4>
+<p>Predictive models</p>
+<ul>
+<li>formulas to estimate the measures of user performance</li>
+<li>not a method of testing</li>
+<li>not based on user satisfaction</li>
+<li>not based
+<ul>
+<li>cringe</li>
+</ul>
+</li>
+<li>not very accurate but pretty okay predictive models</li>
+</ul>
+<p>Fitt’s law - predictive model:</p>
+<ul>
+<li>if you put things closer to each other then the user will take less time to use that function
+<ul>
+<li>aligning the next button for each step in an installation wizard</li>
+</ul>
+</li>
+<li>it’s an actual fucking formula lmfao
+<ul>
+<li>mod</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>There was a shit ton more bonus crap but I’m going to ignore that</p>
+<p><a href="#top">return to top</a></p>
+<h2 id="principles-of-visual-design">Principles of Visual Design</h2>
+<ol>
+<li>scale</li>
+<li>visual hierarchy</li>
+<li>balance</li>
+<li>contrast</li>
+<li>gestalt</li>
+</ol>
+<p>scale:</p>
+<ul>
+<li>relative size of pieces of a design</li>
+<li>signal
+<ul>
+<li>importance</li>
+<li>rank</li>
+</ul>
+</li>
+</ul>
+<p>visual hierarchy:</p>
+<ul>
+<li>the principle of visual
+hierarchy refers to
+guiding the eye on the
+page so that it attends
+to design elements in
+the order of their
+importance</li>
+<li>some things are more important than others</li>
+<li>convey this visually somehow</li>
+</ul>
+<p>balance:</p>
+<ul>
+<li>equally distribtued amount of visual signal on both sides of an imaginary axis</li>
+<li>split the design some way and see if it feels balanced</li>
+</ul>
+<p>contrast:</p>
+<ul>
+<li>juxtaposition of visually dissimilar elemnts in order to convey the fact that these elements are different</li>
+<li>make things look different to show that they are different</li>
+</ul>
+<p>gestalt:</p>
+<ul>
+<li>multiple principles in a trench coat</li>
+<li>principles regarding our tendency to view the whole design as opposed to just the individual components</li>
+<li>missing the trees for the forest</li>
+<li>ex
+<ul>
+<li>principle of similarity</li>
+<li>principle of proximity
+<ul>
+<li>things that are visually closer together are perceived as a part of some group</li>
+</ul>
+</li>
+<li>principle of common region
+<ul>
+<li>same as the above</li>
+</ul>
+</li>
+<li>principle of continuity</li>
+<li>principle of focal point</li>
+<li>principle of closure
+<ul>
+<li>what the fuck did she mean by this</li>
+<li>when we look at a complex arrangement of visual elements, we tend to look for a single, recognizable pattern.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h3 id="interface-metaphors">Interface Metaphors</h3>
+<p>Use a user’s existing understanding of something in order to help them to understand your interface/system</p>
+<p><a href="#top">return to top</a></p>
+<h3 id="graphical-devices-for-grouping">Graphical Devices for Grouping</h3>
+<p>Vertical alignment</p>
+<p>negative space</p>
+<p>grouping helps support visual searching tasks</p>
+<p><a href="#top">return to top</a></p>
+<h2 id="interaction-design-framework">Interaction Design Framework</h2>
+<p>Interaction design is concerned with designing interactive products to support the way people communicate and interact in their everyday and working lives.</p>
+<p>Interaction design is interdisciplinary.
+A good team has tons of disciplines involved in addition to designers and those who are able to realize the designs using tools.
+Professionals that have knowledge regarding the products, its users, and its uses.</p>
+<p><a href="#top">return to top</a></p>
+<h3 id="models">Models</h3>
+<p>model - a simplification of some aspect of the human computer interaction</p>
+<p>conceptual model:</p>
+<ul>
+<li>an explanation, usually highly simpolified, of how something works</li>
+</ul>
+<p>mental model:</p>
+<ul>
+<li>someone’s understanding</li>
+<li>the conceptual model within someone’s mind</li>
+<li>user’s understanding of the system before them
+<ul>
+<li>user’s mental model</li>
+</ul>
+</li>
+<li>designer and/or coder’s understanding of the system they’ve created
+<ul>
+<li>designer/coder’s mental model</li>
+</ul>
+</li>
+</ul>
+<p>framework:</p>
+<ul>
+<li>set of interrelated concepts</li>
+</ul>
+<p>system image:</p>
+<ul>
+<li>info available to the system’s users</li>
+<li>affordances &amp; cues</li>
+<li>perceivable action possibilities</li>
+<li>users’ experience and knowledge
+<ul>
+<li>trained vs untrained</li>
+<li>familiar w/ system or similar systems vs unfamiliar</li>
+</ul>
+</li>
+<li>sum of everyone’s understanding and what the system provides for understanding</li>
+</ul>
+<p>Norman’s conceptual framework:</p>
+<ul>
+<li>3 components
+<ul>
+<li>designer’s conceptual model</li>
+<li>system image</li>
+<li>users’s conceptual model</li>
+</ul>
+</li>
+<li>the three components influence one another and should be considered both together and separately</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h3 id="framworks">Framworks</h3>
+<p>Internal:</p>
+<ul>
+<li>mental models
+<ul>
+<li>internalized understanding of the system in their head</li>
+<li>more generally; how someone understands the world around them (simplified for their use, emphasizing what’s important to them)</li>
+<li>knowledge and experiences inform the expectation which in turn informs
+<ul>
+<li>reaction</li>
+<li>next course of action</li>
+</ul>
+</li>
+<li>users’ mental models can be
+<ul>
+<li>erroneous</li>
+<li>incomplete</li>
+<li>error-filled</li>
+<li>easily confused</li>
+</ul>
+</li>
+<li>we can work to improve the users’ mental models through our design and other actions
+<ul>
+<li>better instructions</li>
+<li>online help
+<ul>
+<li>tutorials</li>
+<li>videos</li>
+<li>1to1 support</li>
+</ul>
+</li>
+<li>following design principles to make our communication more effectively
+<ul>
+<li>visibility</li>
+<li>affordances</li>
+</ul>
+</li>
+<li>know the user better to target problems more closely</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>gulfs of execution
+<ul>
+<li>gaps that exist between the user and the interface</li>
+<li>lack of understanding about
+<ul>
+<li>how to interact with the system</li>
+<li>what is the current state of the system
+<ul>
+<li>informs next actions</li>
+<li>changes experience</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>gap b/w what the user knows and what the system offers</li>
+<li>gap b/w what the user knows is happening with the system and what’s really happening with the system</li>
+</ul>
+</li>
+<li>information processing
+<ul>
+<li>assume the brain functions like any other info processing unit</li>
+<li>encoding --&gt; comparison --&gt; response selection --&gt; response execution</li>
+</ul>
+</li>
+</ul>
+<p>external:</p>
+<ul>
+<li>distributed cognition:
+<ul>
+<li>when a task is hard (cognitively) we can distribute the cognitive load to others</li>
+<li>pilots don’t fly alone</li>
+<li>students don’t work alone</li>
+</ul>
+</li>
+<li>external cognition
+<ul>
+<li>annotation
+<ul>
+<li>anything we find out we can write down so we don’t need to find it again</li>
+<li>highlighting</li>
+</ul>
+</li>
+<li>cognitive tracing
+<ul>
+<li>externally manipulating items into different orders or structures</li>
+<li>examples
+<ul>
+<li>todo pile vs done pile for grading papers</li>
+<li>playing cards</li>
+<li>sorted and unsorted laundry piles</li>
+</ul>
+</li>
+<li>organization presents useful answers to questions we may have when presented with the system</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>embodied interaction
+<ul>
+<li>how people interact with the world using their bodies
+<ul>
+<li>not only their minds</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h2 id="aspects-of-interaction">Aspects of Interaction</h2>
+<p>A focus on the cognitive, social, and emotional.</p>
+<p>Users have 3 different kinds of goals connected to different levels of thought processes and emotions</p>
+<ul>
+<li>experience goals - attached to visceral processing
+<ul>
+<li>we want to feel a certain way
+<ul>
+<li>smart, cool, in control, safe, etc.</li>
+<li>banking software should make people safe and secure</li>
+</ul>
+</li>
+<li>you want some kind of stimulation from the process</li>
+<li>how overwhelmed should the user be
+<ul>
+<li>a video game will be more overwhelming and stimulating than professional lookig banking software</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>end goals - behavioral
+<ul>
+<li>user’s motivation for performing the tasks</li>
+<li>ex submitting assignment on school software, setting up direct deposit</li>
+</ul>
+</li>
+<li>life goals
+<ul>
+<li>deep drives and motivations</li>
+<li>why is the user using this
+<ul>
+<li>what is the longer term goal</li>
+<li>ex graduating and getting a job, starting a retirement plan</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h1 id="rest-of-course">Rest of Course</h1>
+<p>not repeating anything from above down here.</p>
+<p><a href="#top">return to top</a></p>
+<h2 id="affordances">Affordances</h2>
+<p>An affordance is a possible action in an interactive system.
+Made perceivable by clues left by the designer(s).</p>
+<p>false affordance:</p>
+<ul>
+<li>something that seems possible but actually isn’t</li>
+<li>the user thinks something is possible when it is impossible</li>
+</ul>
+<p>Placebo:</p>
+<ul>
+<li>something that seems to do something but does nothing in reality</li>
+</ul>
+<p>hidden affordance:</p>
+<ul>
+<li>something that is possible but is unknown to the user</li>
+<li>the user is able to do an action but they don’t know it</li>
+</ul>
+<p>In order to make affordances known to the user the designer has to take into account all different kinds of information about the user:</p>
+<ul>
+<li>culture
+<ul>
+<li>reading direction</li>
+<li>known symbols</li>
+</ul>
+</li>
+<li>experience</li>
+<li>age (physical and mental condition)</li>
+<li>working conditions</li>
+<li>education</li>
+<li>possible disabilities</li>
+</ul>
+<p>Without well designed affordances,
+the user will most likely leave and stop using the system.</p>
+<p><a href="#top">return to top</a></p>
+<h2 id="accessibility">Accessibility</h2>
+<p>We have to account for those with disabilities.</p>
+<p>There are different categories:</p>
+<ul>
+<li>permanent
+<ul>
+<li>long-term weelchair users</li>
+</ul>
+</li>
+<li>temporary
+<ul>
+<li>crutch users with expected recovery</li>
+</ul>
+</li>
+<li>situational
+<ul>
+<li>it’s really loud and I can’t hear you aaaaaaaaaaaaaaaaaaaaaaaaa</li>
+</ul>
+</li>
+</ul>
+<p>Curb-Cut Effect:</p>
+<ul>
+<li>some kind of concession or feature is made to help a specific group
+<ul>
+<li>disabled</li>
+<li>minorities</li>
+</ul>
+</li>
+<li>that concession or feature benefits more than just that specific group</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h2 id="interaction-types">Interaction Types</h2>
+<ol>
+<li>instructing</li>
+<li>conversing</li>
+<li>manipulating</li>
+<li>exploring</li>
+<li>responding</li>
+</ol>
+<p>not mutually exclusive</p>
+<ol>
+<li>instructing
+<ul>
+<li>users issue instructions to a system; tell it what to do
+<ul>
+<li>typing commands</li>
+<li>selecting options</li>
+<li>abstract button combos
+<ul>
+<li><code>ctrl+c</code> to copy</li>
+<li>emacs chords</li>
+</ul>
+</li>
+<li>speaking aloud</li>
+<li>gestures</li>
+<li>pressing physical buttons with dedicated functions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>conversing
+<ul>
+<li>users have a dialog with a system</li>
+<li>2 way communication with user</li>
+<li>interface via speach or typing</li>
+<li>give command, get presented with options, repeat</li>
+<li>e.g. siri, amazon, chatbot, google giving responses after you give query, installation wizard dialog</li>
+</ul>
+</li>
+<li>manipulating
+<ul>
+<li>users interact with objects in a virtual or physical space by manipulating them
+<ul>
+<li>closing/opening a container or door</li>
+<li>holding an object</li>
+<li>placing an object</li>
+</ul>
+</li>
+<li>users use familiar knowledge of how to interact with objects</li>
+<li>stands in contrast to indirect interaction
+<ul>
+<li>line editors, latex, editing raw html, markdown editing</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>exploring
+<ul>
+<li>users move through a virtual environment or physical space
+<ul>
+<li>vr</li>
+<li>3d worlds</li>
+<li>augmented reality</li>
+</ul>
+</li>
+<li>physical spaces that use sensor-based tech
+<ul>
+<li>smart rooms</li>
+<li>ambient environments</li>
+</ul>
+</li>
+<li>use familiar knowledge of bodlily movements
+<ul>
+<li>walking around</li>
+<li>turning around</li>
+<li>enter in and out of rooms</li>
+</ul>
+</li>
+<li>give additional (unnatural) movements
+<ul>
+<li>fly over</li>
+<li>zoom in/out (pinching)</li>
+<li>climb inside of tiny things</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Responding
+<ul>
+<li>system takes initiative and acts on its own</li>
+<li>ex
+<ul>
+<li>notifications</li>
+<li>automated heating system</li>
+<li>alerting or communicating the user</li>
+<li>fire alarm</li>
+<li>smart home turning up the lights when it detects you’re in the room or the night has come</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>Most systems have a combination of these interactions as opposed to only a single type of interaction</p>
+<p><a href="#top">return to top</a></p>
+<h2 id="data-privacy">Data Privacy</h2>
+<p>Always get informed consent.</p>
+<p>There’s lots of laws to sort through and certs to get in order to do data collection.</p>
+<p><a href="#top">return to top</a></p>
+<h2 id="society">Society</h2>
+<p>I stopped paying attention to lecture atp b/c it all went online</p>
+<p>There are implicit and explicit social cues.</p>
+<p>It’s harder to convey the social cues that we are used to in-person in an online setting.</p>
+<p>We seemingly resort to more explicit social cues like emojis, stickers, gifs, memes, songs, or tone indicators but there are also implicit social cues in the online realm.</p>
+<p><a href="#top">return to top</a></p>
+<h3 id="social-proof">Social Proof</h3>
+<ul>
+<li>people reference the behavior of others to guide their own behavior</li>
+<li>other people are doing it so I can/should do it</li>
+<li>we can leverage this to increase our
+<ul>
+<li>credibility</li>
+<li>adoption rate</li>
+<li>acceptance</li>
+</ul>
+</li>
+<li>risky as
+<ul>
+<li>interface can get too busy</li>
+<li>people might just not like it and it won’t take off</li>
+</ul>
+</li>
+<li>can test usability testing and A/B testing</li>
+<li>mob mentality</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h3 id="biases">Biases</h3>
+<p>acquiescence bias:</p>
+<ul>
+<li>people’s tendency to agree to survey questions</li>
+<li>people want to be agreeable i guess</li>
+<li>avoid being disapproved of</li>
+</ul>
+<p>negativity bias:</p>
+<ul>
+<li>tendency for people to pay more attention or importance to negative experiences, over neutral or positive ones</li>
+</ul>
+<p>courtesy bias:</p>
+<ul>
+<li>tendency to underreport unhappiness with a system or service</li>
+<li>want to be polite</li>
+</ul>
+<p>demand characteristics:</p>
+<ul>
+<li>tendency to figure out the purpose of something</li>
+<li>tendency to adopt certain behaviors they believe belong in an experimental setting</li>
+</ul>
+<p>extreme responding:</p>
+<ul>
+<li>tendency to select the most extreme options or answers available</li>
+</ul>
+<p>question order bias:</p>
+<ul>
+<li>participants can react differently based on the order of the questions ina questionnaire or survey</li>
+<li>questions contextualize other questions</li>
+</ul>
+<p>social desirability bias:</p>
+<ul>
+<li>tendency to project the best self</li>
+<li>want to be desired</li>
+<li>overreport socially desirable behaviors and characteristics</li>
+<li>underreport socially desirable behaviors and characteristics</li>
+</ul>
+<p>recency bias:</p>
+<ul>
+<li>people’s tendency to lean towards recent events</li>
+</ul>
+<p>overconfidence effect:</p>
+<ul>
+<li>tendency to overestimate your knowledge and abilities</li>
+<li>make sure design decisions are rooted in research and data</li>
+</ul>
+<p>framing bias:</p>
+<ul>
+<li>drawing different conclusions from the same information</li>
+<li>different contexts given resulting in differen conclusions</li>
+<li>ask the same question 3 different times in different ways and get different answers</li>
+</ul>
+<p>status quo bias:</p>
+<ul>
+<li>tendency to resist change</li>
+<li>maintaining current state</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h2 id="emotional-design">Emotional Design</h2>
+<p>appeals to people’s emotions in order to improve the user experience</p>
+<p>emotional interaction is concerned with what
+makes people feel happy, sad, annoyed,
+anxious, frustrated, motivated, delirious,
+and so on, and then using this knowledge to
+inform the design of different aspects of the
+user experience.</p>
+<p>emotional design is design that anticipates
+and accommodates users’ needs and
+responses</p>
+<p>visceral design</p>
+<ul>
+<li>making products look, feel, and sound good</li>
+</ul>
+<p>behavioral design</p>
+<ul>
+<li>use and equates to the traditional values of usability</li>
+</ul>
+<p>reflective design</p>
+<ul>
+<li>considering the meaning and personal value of a product in a particular
+culture</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h2 id="random-small-shit">random small shit</h2>
+<p><a href="#top">return to top</a></p>
+<h3 id="front-end-dev-vs-ux-designer">Front-End Dev vs UX Designer</h3>
+<p>Implementing the design vs creating the design</p>
+<p><s>We barely learn either in this course lmfao</s> The course is mainly focused on being the UX Designer</p>
+<p><a href="#top">return to top</a></p>
+<h3 id="recognition-vs-recall">Recognition vs Recall</h3>
+<p>It’s easier for us to recognize things instead of straight up recalling them so design in such.</p>
+<p>Instead of making the user remmeber everything in a process,
+we can prompt them with what might make sense for what they want to do.</p>
+<p>Think of autocomplete in search engines or IDEs.</p>
+<p><a href="#top">return to top</a></p>
+<h3 id="conceptual-design-vs-physical%2Fconcrete-design">conceptual design vs physical/concrete design</h3>
+<p>Conceptual:</p>
+<ul>
+<li>nothing about creation or implementation</li>
+<li>describing and deciding on the concepts that we’re including in the design</li>
+</ul>
+<p>Physical/Concrete Design:</p>
+<ul>
+<li>all about implmentation</li>
+<li>making the chosen concepts actually work.</li>
+</ul>
+<p><a href="#top">return to top</a></p>
+<h3 id="hierarchy-of-user-needs">hierarchy of user needs</h3>
+<p>functional --&gt; reliable --&gt; usable --&gt; pleasurable</p>
+<p><a href="#top">return to top</a></p>
+<h3 id="types-of-interfaces">types of interfaces</h3>
+<ul>
+<li>Command</li>
+<li>Graphical</li>
+<li>Multimedia</li>
+<li>Virtual Reality</li>
+<li>Web</li>
+<li>Mobile</li>
+<li>Appliance</li>
+<li>Voice</li>
+<li>Pen</li>
+<li>Touch</li>
+<li>Gesture</li>
+<li>Haptic</li>
+<li>Multimodal</li>
+<li>Sharable</li>
+<li>Tangible</li>
+<li>Augmented reality</li>
+<li>Wearable</li>
+<li>Robots and drones</li>
+<li>Brain Computer Interaction</li>
+<li>Smart</li>
+</ul>
+
+</div>
+</body>
+</html>
